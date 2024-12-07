@@ -11,7 +11,14 @@ if true then return {} end
 return {
   -- add gruvbox
   { "ellisonleao/gruvbox.nvim" },
+  {
+    "lmantw/themify.nvim",
 
+    lazy = false,
+    priority = 999,
+
+    config = {},
+  },
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
